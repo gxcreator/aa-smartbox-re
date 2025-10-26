@@ -1,0 +1,209 @@
+[    1.805794] CPU: Testing write buffer coherency: ok
+[    1.806276] Setting up static identity map for 0x400081c0 - 0x400081f0
+[    1.807478] devtmpfs: initialized
+[    1.836597] VFP support v0.3: implementor 41 architecture 2 part 30 variant 7 rev 5
+[    1.837000] clocksource: jiffies: mask: 0xffffffff max_cycles: 0xffffffff, max_idle_ns: 6370867519511994 ns
+[    1.837018] futex hash table entries: 256 (order: -1, 3072 bytes)
+[    1.837218] atomic64_test: passed
+[    1.837225] pinctrl core: initialized pinctrl subsystem
+[    1.837667] NET: Registered protocol family 16
+[    1.838045] DMA: preallocated 16 KiB pool for atomic coherent allocations
+[    1.839070] dump_class_init,857, success
+[    1.840176] platform 2010000.iommu: iova_base: 0x48400000
+[    1.841804] sunxi iommu: irq = 22
+[    1.860116] use hosc , set rate 1000000
+[    1.860136] sun8iw21p1-pinctrl pio: initialized sunXi PIO driver
+[    1.862992] iommu: Adding device npu to group 0
+[    1.864415] iommu: Adding device 1c0e000.ve to group 0
+[    1.872689] iommu: Adding device 5410000.g2d to group 0
+[    1.899494] pwm module init!
+[    1.905196] usbcore: registered new interface driver usbfs
+[    1.905339] usbcore: registered new interface driver hub
+[    1.905465] usbcore: registered new device driver usb
+[    1.907711] ion_parse_dt_heap_common: id 0 type 0 name sys_user align 1000
+[    1.908560] ion_parse_dt_heap_common: id 4 type 4 name cma align 1000
+[    1.909187] ion_heap_create: Invalid heap type 4
+[    1.909458] Advanced Linux Sound Architecture Driver Initialized.
+[    1.912341] G2D: rcq version initialized.major:252
+[    1.913393] clocksource: Switched to clocksource arch_sys_counter
+[    1.917424] get androidboot.mode fail
+[    1.917438] sunxi_i2c_adap_init()2865 - init
+[    1.917909] sunxi_i2c_probe()2468 - [i2c1] warning: failed to get regulator id
+[    1.917967] sunxi_i2c_probe()2529 - [i2c1] twi_drv_used = 0
+[    1.917975] sunxi_i2c_probe()2536 - [i2c1] twi_pkt_interval = 0
+[    1.918018] twi_request_gpio()463 - [i2c1] init name: (null)
+[    1.919639] NET: Registered protocol family 2
+[    1.920538] TCP established hash table entries: 16 (order: -6, 64 bytes)
+[    1.920548] TCP bind hash table entries: 16 (order: -6, 64 bytes)
+[    1.920554] TCP: Hash tables configured (established 16 bind 16)
+[    1.920565] UDP hash table entries: 256 (order: 0, 4096 bytes)
+[    1.920580] UDP-Lite hash table entries: 256 (order: 0, 4096 bytes)
+[    1.920767] NET: Registered protocol family 1
+[    1.921348] sunxi_spi_probe()3075 - [spi0] SPI DBI INTERFACE
+[    1.921356] sunxi_spi_probe()3084 - [spi0] SPI MASTER MODE
+[    1.921420] sunxi_spi_resource_get()2726 - sample_mode:1 sample_delay:1b
+[    1.921427] sunxi_spi_request_gpio()2692 - [spi0] Pinctrl init spi0
+[    1.921495] sunxi_spi_clk_init()2763 - [spi0] mclk 100000000
+[    1.922564] sunxi_spi_probe()3163 - [spi0]: driver probe succeed, base c482a000, irq 295
+[    1.925305] workingset: timestamp_bits=29 max_order=14 bucket_order=0
+[    1.939333] squashfs: version 4.0 (2009/01/31) Phillip Lougher
+[    1.939807] jffs2: version 2.2. (NAND) © 2001-2006 Red Hat, Inc.
+[    1.944952] io scheduler noop registered
+[    1.945228] io scheduler cfq registered (default)
+[    1.945527] failed to get easy_light_used assign
+[    1.945534] failed to get normal led pin assign
+[    1.945538] failed to get standby led pin assign
+[    1.945542] failed to get standby led pin assign
+[    1.945618] gpio_pin_1(138) gpio_is_valid
+[    1.945794] gpio_pin_2(139) gpio_is_valid
+[    1.945936] gpio_pin_3(238) gpio_is_valid
+[    1.946176] gpio name is PE10, ret = 0
+[    1.946383] gpio name is PE11, ret = 0
+[    1.946550] gpio name is PH14, ret = 0
+[    1.946704] gpio_init finish with uesd
+[    1.949473] uart0: ttyS0 at MMIO 0x2500000 (irq = 289, base_baud = 1500000) is a SUNXI
+[    1.950570] uart2: ttyS2 at MMIO 0x2500800 (irq = 290, base_baud = 1500000) is a SUNXI
+[    1.952389] misc dump reg init
+[    1.953269] sunxi-wlan soc@03000000:wlan@0: wlan_busnum (1)
+[    1.953282] sunxi-wlan soc@03000000:wlan@0: wlan_power_num (-1)
+[    1.953290] sunxi-wlan soc@03000000:wlan@0: Missing wlan_io_regulator.
+[    1.953298] sunxi-wlan soc@03000000:wlan@0: io_regulator_name ((null))
+[    1.953310] sunxi-wlan soc@03000000:wlan@0: request pincrtl handle for device [soc@03000000:wlan@0] failed
+[    1.953370] sunxi-wlan soc@03000000:wlan@0: wlan_regon gpio=134  mul-sel=1  pull=1  drv_level=2  data=0
+[    1.953585] sunxi-wlan soc@03000000:wlan@0: chip_en gpio=237  mul-sel=1  pull=1  drv_level=2  data=0
+[    1.953606] sunxi_wlan_set_power on_off:1
+[    1.963624] sunxi_wl_chipen_set dev:0 on_off:1 power_state:1
+[    1.963644] sunxi-wlan soc@03000000:wlan@0: get gpio wlan_hostwake failed
+[    1.963656] sunxi-wlan soc@03000000:wlan@0: clk_name ()
+[    1.964806] m25p80 spi0.0: BY25Q128 (16384 Kbytes)
+[    1.965670] 8 sunxipart partitions found on MTD device spi0.0
+[    1.965679] Creating 8 MTD partitions on "spi0.0":
+[    1.965699] 0x000000000000-0x000000060000 : "uboot"
+[    1.967421] 0x000000060000-0x0000002a0000 : "boot"
+[    1.969076] 0x0000002a0000-0x000000730000 : "rootfs"
+[    1.971062] 0x000000730000-0x0000007b0000 : "rootfs_data"
+[    1.972738] 0x0000007b0000-0x0000007d0000 : "env"
+[    1.974810] 0x0000007d0000-0x0000007e0000 : "private"
+[    1.976655] 0x0000007e0000-0x000000ea0000 : "app"
+[    1.978800] 0x000000ea0000-0x000001000000 : "UDISK"
+[    1.981270] usbcore: registered new interface driver cdc_ether
+[    1.981551] usbcore: registered new interface driver cdc_ncm
+[    1.981561] ehci_hcd: USB 2.0 'Enhanced' Host Controller (EHCI) Driver
+[    1.981920] get drv_vbus is fail, 84
+[    1.981926] get ehci0-controller, regulator_io is no nocare
+[    1.981932] get ehci0-controller wakeup-source is fail.
+[    1.982088] sunxi ehci0-controller don't init wakeup source
+[    1.982100] [sunxi-ehci0]: probe, pdev->name: 4101000.ehci0-controller, sunxi_ehci: 0xc0411680, 0x:c487b000, irq_no:12d
+[    1.982498] sunxi-ehci 4101000.ehci0-controller: SW USB2.0 'Enhanced' Host Controller (EHCI) Driver
+[    1.982544] sunxi-ehci 4101000.ehci0-controller: new USB bus registered, assigned bus number 1
+[    1.982669] sunxi-ehci 4101000.ehci0-controller: irq 301, io mem 0xc3b4e000
+[    1.993426] sunxi-ehci 4101000.ehci0-controller: USB 0.0 started, EHCI 1.00
+[    1.993641] usb usb1: New USB device found, idVendor=1d6b, idProduct=0002
+[    1.993650] usb usb1: New USB device strings: Mfr=3, Product=2, SerialNumber=1
+[    1.993658] usb usb1: Product: SW USB2.0 'Enhanced' Host Controller (EHCI) Driver
+[    1.993665] usb usb1: Manufacturer: Linux 4.9.191 ehci_hcd
+[    1.993671] usb usb1: SerialNumber: sunxi-ehci
+[    1.999559] hub 1-0:1.0: USB hub found
+[    1.999603] hub 1-0:1.0: 1 port detected
+[    2.000281] ehci-platform: EHCI generic platform driver
+[    2.000632] ohci_hcd: USB 1.1 'Open' Host Controller (OHCI) Driver
+[    2.000972] get drv_vbus is fail, 84
+[    2.000979] get ohci0-controller, regulator_io is no nocare
+[    2.000984] get ohci0-controller wakeup-source is fail.
+[    2.001137] sunxi ohci0-controller don't init wakeup source
+[    2.001224] [sunxi-ohci0]: probe, pdev->name: 4101000.ohci0-controller, sunxi_ohci: 0xc04118a4
+[    2.001601] sunxi-ohci 4101000.ohci0-controller: SW USB2.0 'Open' Host Controller (OHCI) Driver
+[    2.001651] sunxi-ohci 4101000.ohci0-controller: new USB bus registered, assigned bus number 2
+[    2.001731] sunxi-ohci 4101000.ohci0-controller: irq 302, io mem 0xc3842000
+[    2.060928] usb usb2: New USB device found, idVendor=1d6b, idProduct=0001
+[    2.060940] usb usb2: New USB device strings: Mfr=3, Product=2, SerialNumber=1
+[    2.060948] usb usb2: Product: SW USB2.0 'Open' Host Controller (OHCI) Driver
+[    2.060955] usb usb2: Manufacturer: Linux 4.9.191 ohci_hcd
+[    2.060961] usb usb2: SerialNumber: sunxi-ohci
+[    2.067012] hub 2-0:1.0: USB hub found
+[    2.067067] hub 2-0:1.0: 1 port detected
+[    2.067769] usb_serial_number:20080411
+[    2.069120] sunxi-rtc rtc: rtc core: registered sunxi-rtc as rtc0
+[    2.069169] sunxi-rtc rtc: RTC enabled
+[    2.069227] fix to cold boot, save boot reason
+[    2.069677] i2c /dev entries driver
+[    2.070177] sunxi cedar version 0.1
+[    2.070306] [VE_DEBUG:3429] install start!!!
+[    2.070306]
+[    2.070453] VE: cedar-ve the get irq is 292
+[    2.070560] [VE_WARNING:3512] regs_csi = c4899000
+[    2.071256] [VE_DEBUG:3575] ve_proc_mgr: flag = 1
+[    2.071256]
+[    2.071263] [VE_DEBUG:3577] install end!!!
+[    2.071263]
+[    2.072511] sunxi-wdt 20500a0.watchdog: Watchdog enabled (timeout=16 sec, nowayout=0)
+[    2.074556] sunxi-mmc sdc1: SD/MMC/SDIO Host Controller Driver(v3.31 2024-1-17 14:13)
+[    2.074727] sunxi-mmc sdc1: ***ctl-spec-caps*** 8
+[    2.074745] sunxi-mmc sdc1: Can't get vmmc regulator string
+[    2.074752] sunxi-mmc sdc1: Can't get vqmmc regulator string
+[    2.074759] sunxi-mmc sdc1: Can't get vdmmc regulator string
+[    2.074766] sunxi-mmc sdc1: Can't get vdmmc33sw regulator string
+[    2.074772] sunxi-mmc sdc1: Can't get vdmmc18sw regulator string
+[    2.074779] sunxi-mmc sdc1: Can't get vqmmc33sw regulator string
+[    2.074786] sunxi-mmc sdc1: Can't get vqmmc18sw regulator string
+[    2.074792] sunxi-mmc sdc1: Failed getting OCR mask: 0
+[    2.075564] sunxi-mmc sdc1: set host busy
+[    2.075574] sunxi-mmc sdc1: ***set host ocr***
+[    2.075642] mmc:failed to get gpios
+[    2.075666] sunxi-mmc sdc1: min-frequency:50000000
+[    2.075940] sunxi-mmc sdc1: sdc set ios:clk 0Hz bm PP pm UP vdd 21 width 1 timing LEGACY(SDR12) dt B
+[    2.090080] sunxi-mmc sdc1: sdc set ios:clk 50000000Hz bm PP pm ON vdd 21 width 1 timing LEGACY(SDR12) dt B
+[    2.106761] sunxi-mmc sdc1: detmode:manually by software
+[    2.107530] hidraw: raw HID events driver (C) Jiri Kosina
+[    2.112629] NET: Registered protocol family 10
+[    2.114528] sunxi-mmc sdc1: sdc set ios:clk 50000000Hz bm PP pm ON vdd 21 width 1 timing LEGACY(SDR12) dt B
+[    2.116701] sunxi-mmc sdc1: sdc set ios:clk 50000000Hz bm PP pm ON vdd 21 width 1 timing LEGACY(SDR12) dt B
+[    2.118353] sunxi-mmc sdc1: card claims to support voltages below defined range
+[    2.119299] sunxi-mmc sdc1: sdc set ios:clk 50000000Hz bm PP pm ON vdd 21 width 1 timing SD-HS(SDR25) dt B
+[    2.119401] sunxi-mmc sdc1: sdc set ios:clk 50000000Hz bm PP pm ON vdd 21 width 1 timing SD-HS(SDR25) dt B
+[    2.119486] sunxi-mmc sdc1: sdc set ios:clk 50000000Hz bm PP pm ON vdd 21 width 4 timing SD-HS(SDR25) dt B
+[    2.120329] mmc0: new high speed SDIO card at address 0001
+[    2.120753] NET: Registered protocol family 17
+[    2.120810] NET: Registered protocol family 15
+[    2.122025] Registering SWP/SWPB emulation handler
+[    2.130881] sunxi-rtc rtc: setting system clock to 1970-01-01 00:00:02 UTC (2)
+[    2.131829] clk: Not disabling unused clocks
+[    2.131836] ALSA device list:
+[    2.131841]   #0: Loopback 1
+[    2.131903] Warning: unable to open an initial console.
+[    2.134946] VFS: Mounted root (squashfs filesystem) readonly on device 31:2.
+[    2.139690] devtmpfs: mounted
+[    2.140051] Freeing unused kernel memory: 184K
+[    2.140155] This architecture does not have kernel memory protection.
+[    2.140159] will run init ...
+[    2.492287] random: fast init done
+[    2.983886] sunxi-wlan soc@03000000:wlan@0: bus_index: 1
+[    2.983895] sunxi_wlan_set_power on_off:1
+[    2.993911] sunxi_wl_chipen_set dev:0 on_off:1 power_state:1
+[    4.489911] IPv6: ADDRCONF(NETDEV_UP): wlan0: link is not ready
+[    4.620921] Unsupported cmd:18
+[    5.537176] random: crng init done
+[    5.606042] start_addr=(0x0), end_addr=(0x20000), buffer_size=(0x20000), smp_number_max=(16384)
+[    5.626493] IPv6: ADDRCONF(NETDEV_UP): wlan0: link is not ready
+[   10.026104] IPv6: ADDRCONF(NETDEV_CHANGE): wlan0: link becomes ready
+[   21.512558] hci: ERR: sunxi_ehci is already enable, can not enable again
+[   21.512566] hci: ERR: sunxi_ohci is already enable, can not enable again
+[   21.523165] [ehci0-controller]: sunxi_usb_disable_ehci
+[   21.523180] [sunxi-ehci0]: remove, pdev->name: 4101000.ehci0-controller, sunxi_ehci: 0xc0411680
+[   21.523215] sunxi-ehci 4101000.ehci0-controller: remove, state 4
+[   21.523245] usb usb1: USB disconnect, device number 1
+[   21.524327] sunxi-ehci 4101000.ehci0-controller: USB bus 1 deregistered
+[   21.524384] [ohci0-controller]: sunxi_usb_disable_ohci
+[   21.524392] [sunxi-ohci0]: remove, pdev->name: 4101000.ohci0-controller, sunxi_ohci: 0xc04118a4
+[   21.524400] sunxi-ohci 4101000.ohci0-controller: remove, state 4
+[   21.524425] usb usb2: USB disconnect, device number 1
+[   21.525275] sunxi-ohci 4101000.ohci0-controller: USB bus 2 deregistered
+[   21.569570] file system registered
+[   21.573707] acc_setup
+[   21.607491] read descriptors
+[   21.607507] read strings
+[   21.607772] usb_ep_autoconfig_ss gadget:c03e3c90 ep address:1
+[   21.607781] usb_ep_autoconfig_ss gadget:c03e3c90 ep address:81
+[   21.877150] android_work: sent uevent USB_STATE=CONNECTED
+[   21.995059] configfs-gadget gadget: high-speed config #1: c
+[   21.995187] android_work: sent uevent USB_STATE=CONFIGURED
