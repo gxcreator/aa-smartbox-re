@@ -1,0 +1,32 @@
+earlyprintk=sunxi-uart,0x02500000
+initcall_debug=0
+nand_root=/dev/ubiblock0_2
+mmc_root=/dev/mmcblk0p2
+init=/pseudo_init
+nor_root=/dev/mtdblock2
+loglevel=1
+cma=256M
+coherent_pool=16K
+mac=
+wifi_mac=
+bt_mac=
+specialstr=
+root_partition=rootfs
+mtd_name=sys
+rootfstype=squashfs
+setargs_nor=setenv bootargs  earlyprintk=${earlyprintk} clk_ignore_unused initcall_debug=${initcall_debug} console=${msndebug} loglevel=${loglevel} root=${nor_root} rootwait init=${init} rdinit=${rdinit} partitions=${partitions} cma=${cma} coherent_pool=${coherent_pool} ion_carveout_list=${reserve_list}
+setargs_nand=setenv bootargs earlyprintk=${earlyprintk} clk_ignore_unused initcall_debug=${initcall_debug} console=${msndebug} loglevel=${loglevel}  ubi.mtd=${mtd_name} root=${nand_root} rootfstype=${rootfstype} rootwait init=${init} rdinit=${rdinit} partitions=${partitions} cma=${cma} mac_addr=${mac} wifi_mac=${wifi_mac} bt_mac=${bt_mac} selinux=${selinux} specialstr=${specialstr} coherent_pool=${coherent_pool} ion_carveout_list=${reserve_list}
+setargs_nand_ubi=setenv bootargs ubi.mtd=${mtd_name} ubi.block=0,${root_partition} earlyprintk=${earlyprintk} clk_ignore_unused initcall_debug=${initcall_debug} console=${msndebug} loglevel=${loglevel} root=${nand_root} rootfstype=${rootfstype} init=${init} partitions=${partitions} cma=${cma} snum=${snum} mac_addr=${mac} wifi_mac=${wifi_mac} bt_mac=${bt_mac} specialstr=${specialstr} gpt=1
+setargs_mmc=setenv  bootargs earlyprintk=${earlyprintk} clk_ignore_unused initcall_debug=${initcall_debug} console=${msndebug} loglevel=${loglevel} root=${mmc_root}  rootwait init=${init} partitions=${partitions} cma=${cma} mac_addr=${mac} wifi_mac=${wifi_mac} bt_mac=${bt_mac} selinux=${selinux} specialstr=${specialstr} coherent_pool=${coherent_pool} ion_carveout_list=${reserve_list}
+boot_partition=boot
+boot_normal=sunxi_flash read 44800000 ${boot_partition};bootm 44800000
+boot_recovery=sunxi_flash read 44800000 extend;bootm 44800000
+boot_fastboot=fastboot
+recovery_key_value_max=0x13
+recovery_key_value_min=0x10
+fastboot_key_value_max=0x8
+fastboot_key_value_min=0x2
+bootdelay=0
+bootcmd=run setargs_nand boot_normal
+verify=N
+mtdparts=spi0.0:2304K(boot),4672K(rootfs),512K(rootfs_data),128K(env),64K(private),6912K(app),0K(UDISK)
